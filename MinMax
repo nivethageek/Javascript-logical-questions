@@ -1,0 +1,18 @@
+const lararr = [10, 30, 20, 1, 50, 70, 100];
+
+let seclar = lararr[0];
+let lar = lararr[0];
+
+for (let i = 0; i < lararr.length; i++) {
+  if (lararr[i] > lar) {
+    //if(lararr[i] < lar) -> to find min value from array
+    seclar = lar;
+    lar = lararr[i];
+  } else if (lararr[i] > seclar && lararr[i] !== lar) {
+    // if(lararr[i] < seclar && lararr[i] !== lar) -> to find sec min value
+    seclar = lararr[i];
+  }
+}
+
+console.log(lar);
+console.log(seclar);
